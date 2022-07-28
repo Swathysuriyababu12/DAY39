@@ -1,0 +1,185 @@
+1.Find all the topics which are thought in the month of October
+
+db.topics.find({"date":"October"})
+   .projection({topicName:1,date:1,_id:0})
+  
+  RESULTS
+
+  {
+  "topicName": "MONGODB",
+  "date": "October"
+},
+{
+  "topicName": "AWS",
+  "date": "October"
+}
+
+2.Find all the company drives which appeared between 15 oct-2022 and 31-oct-2022
+
+db.company_drives.find({"date":{$gte:"2022-10-15T00:00:00.000Z",$lt:"2022-10-31T24:00:00.000Z"}})
+   .projection({_id:0})
+   .sort({_id:-1})
+   .limit(100)
+
+
+   RESULTS
+
+   {
+  "companyName": "Stark - Klocko",
+  "date": "2022-10-28T13:54:38.503Z"
+},
+{
+  "companyName": "Upton, Hudson and Beahan",
+  "date": "2022-10-27T17:36:55.551Z"
+},
+{
+  "companyName": "Corwin - Collins",
+  "date": "2022-10-17T00:39:53.458Z"
+}
+
+3.Find all the company drives and students who are appeared for the placement.
+
+db.users.aggregate([
+  {$project:{
+      name:1,
+      _id:0,
+      companyDrives:1
+  }},
+  {$group: {"_id":{name:"$name"},
+                    "companyDrives": {
+                          "$addToSet": "$companyDrives",
+                          
+                    },
+                   
+            }}
+])
+
+
+RESULTS
+
+/* 1 */
+{
+	"_id" : {
+		"name" : "Christelle"
+	},
+	"companyDrives" : [
+		[ "Corwin - Collins", "Stokes and Sons", "Lindgren, Gerhold and Thompson" ]
+	]
+},
+
+/* 2 */
+{
+	"_id" : {
+		"name" : "Mafalda"
+	},
+	"companyDrives" : [
+		[ "Corwin - Collins", "Stokes and Sons", "Lindgren, Gerhold and Thompson" ]
+	]
+},
+
+/* 3 */
+{
+	"_id" : {
+		"name" : "Manuel"
+	},
+	"companyDrives" : [
+		[ "Farrell Inc" ]
+	]
+},
+
+/* 4 */
+{
+	"_id" : {
+		"name" : "Emma"
+	},
+	"companyDrives" : [
+		[ "Corwin - Collins", "Stokes and Sons", "Lindgren, Gerhold and Thompson" ]
+	]
+},
+
+/* 5 */
+{
+	"_id" : {
+		"name" : "Garrick"
+	},
+	"companyDrives" : [
+		[ "Corwin - Collins", "Stokes and Sons", "Lindgren, Gerhold and Thompson" ]
+	]
+},
+
+/* 6 */
+{
+	"_id" : {
+		"name" : "Ava"
+	},
+	"companyDrives" : [
+		[ "Farrell Inc", "Stokes and Sons", "Lindgren, Gerhold and Thompson" ]
+	]
+},
+
+/* 7 */
+{
+	"_id" : {
+		"name" : "Stewart"
+	},
+	"companyDrives" : [
+		[ "Corwin - Collins", "Lindgren, Gerhold and Thompson" ]
+	]
+},
+
+/* 8 */
+{
+	"_id" : {
+		"name" : "Eli"
+	},
+	"companyDrives" : [
+		[ "Farrell Inc", "Stokes and Sons" ]
+	]
+},
+
+/* 9 */
+{
+	"_id" : {
+		"name" : "Victoria"
+	},
+	"companyDrives" : [
+		[ "Farrell Inc", "Stokes and Sons" ]
+	]
+},
+
+/* 10 */
+{
+	"_id" : {
+		"name" : "Dalton"
+	},
+	"companyDrives" : [
+		[ "Corwin - Collins", "Farrell Inc,Stokes and Sons" ]
+	]
+}
+
+
+
+Find all the mentors with who has the mentee's count more than 15
+
+RESULTS
+
+{
+  "_id": "62c2ddbddaff390f5fad198d",
+  "mentor": "Andrew",
+  "menteeCount": 29
+},
+{
+  "_id": "62c2ddbddaff390f5fad198e",
+  "mentor": "Jordyn",
+  "menteeCount": 17
+}
+
+
+Find the number of problems solved by the user in codekata
+
+
+
+
+
+
+

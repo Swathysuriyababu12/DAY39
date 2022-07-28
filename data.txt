@@ -1,0 +1,178 @@
+[
+{"name":"Dalton","batch":"batch 1","companyDrives":["Corwin - Collins","Farrell Inc,Stokes and Sons"],"gender":"Male","phone":"(522) 755-2813 x64223","_id":"1"},
+{"name":"Christelle","batch":"batch 2","companyDrives":["Corwin - Collins","Stokes and Sons","Lindgren, Gerhold and Thompson"],"gender":"Female","phone":"359-941-2264","_id":"2"},
+{"name":"Eli","batch":"batch 3","companyDrives":["Farrell Inc","Stokes and Sons"],"gender":"Male","phone":"1-293-298-7448 x3373","_id":"3"},
+{"name":"Ava","batch":"batch 4","companyDrives":["Farrell Inc","Stokes and Sons","Lindgren, Gerhold and Thompson"],"gender":"Female","phone":"940-515-3758 x2021","_id":"4"},
+{"name":"Stewart","batch":"batch 4","companyDrives":["Corwin - Collins","Lindgren, Gerhold and Thompson"],"gender":"Female","phone":"885.835.6598 x4103","_id":"5"},
+{"name":"Manuel","batch":"batch 6","companyDrives":["Farrell Inc"],"gender":"Female","phone":"747.512.7457 x7642","_id":"6"},
+{"name":"Mafalda","batch":"batch 7","companyDrives":["Corwin - Collins","Stokes and Sons","Lindgren, Gerhold and Thompson"],"gender":"Male","phone":"(586) 443-7058 x37496","_id":"7"},
+{"name":"Victoria","batch":"batch 8","companyDrives":["Farrell Inc","Stokes and Sons"],"gender":"Female","phone":"746-984-7768 x109","_id":"8"}, 
+{"name":"Emma","batch":"batch 9","companyDrives":["Corwin - Collins","Stokes and Sons","Lindgren, Gerhold and Thompson"],"gender":"Female","phone":"866-526-2709 x20634","_id":"9"},
+{"name":"Garrick","batch":"batch 10","companyDrives":["Corwin - Collins","Stokes and Sons","Lindgren, Gerhold and Thompson"],"gender":"Male","phone":"(240) 234-6654 x4748","_id":"10"}
+]
+
+[{"arrays":55911,"basics":16669,"mathematics":75157,"datastructures":43606,"bitwise":51051,"algorithm":32213,"id":"1"},
+    {"arrays":60377,"basics":3100,"mathematics":10058,"datastructures":37795,"bitwise":43752,"algorithm":70358,"id":"2"},
+    {"arrays":58813,"basics":45159,"mathematics":1562,"datastructures":79941,"bitwise":34614,"algorithm":34157,"id":"3"},
+    {"arrays":90449,"basics":86933,"mathematics":38399,"datastructures":57560,"bitwise":48031,"algorithm":30299,"id":"4"},
+    {"arrays":99591,"basics":54850,"mathematics":50645,"datastructures":13880,"bitwise":28375,"algorithm":26595,"id":"5"},
+    {"arrays":68386,"basics":68355,"mathematics":837,"datastructures":75925,"bitwise":79618,"algorithm":34003,"id":"6"},
+    {"arrays":82195,"basics":38689,"mathematics":62497,"datastructures":43114,"bitwise":97481,"algorithm":90263,"id":"7"},
+    {"arrays":14887,"basics":14552,"mathematics":61782,"datastructures":1550,"bitwise":67186,"algorithm":46044,"id":"8"},
+    {"arrays":83358,"basics":43479,"mathematics":26829,"datastructures":28790,"bitwise":58464,"algorithm":26208,"id":"9"},
+    {"arrays":88444,"basics":48604,"mathematics":75703,"datastructures":41536,"bitwise":98202,"algorithm":87503,"id":"10"}]
+
+
+
+    [
+        {
+         "attendance": 97,
+         "id": "1"
+        },
+        {
+         "attendance": 70,
+         "id": "2"
+        },
+        {
+         "attendance": 95,
+         "id": "3"
+        },
+        {
+         "attendance": 40,
+         "id": "4"
+        },
+        {
+         "attendance": 84,
+         "id": "5"
+        },
+        {
+         "attendance": 13,
+         "id": "6"
+        },
+        {
+         "attendance": 91,
+         "id": "7"
+        },
+        {
+         "attendance": 84,
+         "id": "8"
+        },
+        {
+         "attendance": 94,
+         "id": "9"
+        },
+        {
+         "attendance": 59,
+         "id": "10"
+        }
+       ]
+
+
+
+[
+    {
+     "topicName": "HTML",
+     "date": "November",
+     "mentor": "Jordyn",
+     
+    },
+    {
+     "topicName": "CSS",
+     "date": "August",
+     "mentor": "Jordyn",
+    
+    },
+    {
+     "topicName": "JAVASCRIPT",
+     "date": "September",
+     "mentor": "Andrew",
+     
+    },
+    {
+     "topicName": "REACT",
+     "date": "January",
+     "mentor": "Andrew",
+    },
+    {
+     "topicName": "MYSQL",
+     "date": "February",
+     "mentor": "Andrew",
+    },
+    {
+     "topicName": "MONGODB",
+     "date": "October",
+     "mentor": "Earnest",
+    },
+    {
+     "topicName": "AWS",
+     "date": "October",
+     "mentor": "Earnest",
+    },
+    {
+     "topicName": "DSA",
+     "date": "March",
+     "mentor": "Martine",
+    },
+    {
+     "topicName": "NODEJS",
+     "date": "February",
+     "mentor": "Martine",
+    },
+    {
+     "topicName": "AWT",
+     "date": "August",
+     "mentor": "Martine",
+    }
+   ]
+
+
+   [
+    {
+     "mentor": "Martine",
+     "menteeCount": 7,
+    },
+    {
+     "mentor": "Earnest",
+     "menteeCount": 6,
+    },
+    {
+     "mentor": "Andrew",
+     "menteeCount": 29,
+    },
+    {
+     "mentor": "Jordyn",
+     "menteeCount": 17,
+    }
+   ]
+
+   [
+    {
+     "companyName": "Corwin - Collins",
+     "date": "2022-10-17T00:39:53.458Z",
+    },
+    {
+     "companyName": "Stokes and Sons",
+     "date": "2022-06-27T21:16:31.360Z",
+     
+    },
+    {
+     "companyName": "Upton, Hudson and Beahan",
+     "date": "2022-10-27T17:36:55.551Z",
+     
+    },
+    {
+     "companyName": "Farrell Inc",
+     "date": "2022-06-28T04:27:32.418Z",
+     
+    },
+    {
+     "companyName": "Schimmel, Hettinger and Ledner",
+     "date": "2022-06-27T19:11:07.385Z",
+    
+    },
+    {
+     "companyName": "Stark - Klocko",
+     "date": "2022-10-28T13:54:38.503Z",
+
+    },
+      ]
